@@ -1,0 +1,111 @@
+.contact {
+  background-color: var(--primary);
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(0,0,0,0) 60%);
+  pointer-events: none;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-box {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: var(--space-8);
+  border-radius: 16px;
+  text-align: center;
+  max-width: 800px;
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.contact-title {
+  margin-bottom: var(--space-3);
+}
+
+.contact-desc {
+  font-size: 1.125rem;
+  margin-bottom: var(--space-6);
+  opacity: 0.9;
+}
+
+.contact-methods {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-6);
+  margin-bottom: var(--space-6);
+  flex-wrap: wrap;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  text-align: left;
+}
+
+.contact-icon {
+  font-size: 2rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.contact-item h3 {
+  font-size: 1rem;
+  opacity: 0.8;
+  margin-bottom: 2px;
+}
+
+.contact-item p {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.btn-whatsapp {
+  display: inline-block;
+  background-color: #25D366; /* Official WhatsApp Color */
+  color: #ffffff;
+  padding: var(--space-3) var(--space-6);
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 1.125rem;
+  text-decoration: none;
+  transition: transform 0.2s, background-color 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+}
+
+.btn-whatsapp:hover {
+  background-color: #20bd5a;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+  color: #ffffff;
+}
+
+@media (max-width: 600px) {
+  .contact-box {
+    padding: var(--space-5);
+  }
+  .contact-methods {
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-4);
+  }
+}

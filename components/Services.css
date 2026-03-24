@@ -1,0 +1,25 @@
+.services {
+  background-color: var(--background);
+}
+
+.services-content {
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.services-title {
+  margin-bottom: var(--space-5);
+  color: var(--primary);
+}
+
+.services-desc {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: var(--text);
+  margin-bottom: var(--space-6);
+}
+
+.btn-services {
+  display: inline-block;
+}

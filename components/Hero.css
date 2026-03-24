@@ -1,0 +1,64 @@
+.hero {
+  position: relative;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  /* Use a modern gradient as placeholder if no image */
+  background: linear-gradient(135deg, rgba(4, 73, 184, 0.9) 0%, rgba(0, 0, 0, 0.8) 100%),
+              url('https://images.unsplash.com/photo-1613214149922-f1809c99b414?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+  color: #ffffff;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin-left: 250px;
+  opacity: 0;
+  animation: fadeInUp 1s ease-out forwards; 
+}
+
+@media (max-width: 768px) {
+  .hero-content {
+    margin-left: var(--space-4);
+  }
+}
+
+.hero-title {
+  color: #ffffff;
+  margin-bottom: var(--space-4);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-subtitle {
+  font-size: clamp(1.125rem, 2vw, 1.25rem);
+  margin-bottom: var(--space-6);
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+.hero-actions {
+  display: flex;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.hero-btn-secondary {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+.hero-btn-secondary:hover {
+  background-color: #ffffff;
+  color: var(--primary);
+}
