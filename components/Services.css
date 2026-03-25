@@ -1,5 +1,5 @@
 .services {
-  background-color: var(--background);
+  background-color: var(--surface);
 }
 
 .services-content {
@@ -22,4 +22,10 @@
 
 .btn-services {
   display: inline-block;
+}
+
+@media (max-width: 480px) {
+  .services-content{
+    margin-bottom: -50px;
+  }
 }

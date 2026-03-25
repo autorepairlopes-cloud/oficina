@@ -1,5 +1,5 @@
 .contact {
-  background-color: var(--primary);
+  background-color: #070a38;
   color: #ffffff;
   position: relative;
   overflow: hidden;
@@ -12,7 +12,6 @@
   left: -50%;
   width: 200%;
   height: 200%;
-  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(0,0,0,0) 60%);
   pointer-events: none;
 }
 
@@ -22,14 +21,11 @@
 }
 
 .contact-box {
-  background-color: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
   padding: var(--space-8);
-  border-radius: 16px;
   text-align: center;
   max-width: 800px;
   width: 100%;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: left;
 }
 
 .contact-title {
@@ -44,10 +40,9 @@
 
 .contact-methods {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   gap: var(--space-6);
   margin-bottom: var(--space-6);
-  flex-wrap: wrap;
 }
 
 .contact-item {
@@ -80,7 +75,9 @@
 }
 
 .btn-whatsapp {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   background-color: #25D366; /* Official WhatsApp Color */
   color: #ffffff;
   padding: var(--space-3) var(--space-6);
@@ -99,13 +96,44 @@
   color: #ffffff;
 }
 
-@media (max-width: 600px) {
+
+@media (max-width: 768px) {
   .contact-box {
-    padding: var(--space-5);
+    padding: var(--space-4);
   }
+
+  .contact-title {
+    font-size: clamp(1.5rem, 5vw, 2rem);
+  }
+
+  .contact-desc {
+    font-size: 1rem;
+  }
+
   .contact-methods {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     gap: var(--space-4);
+  }
+
+  .contact-icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .contact-item p {
+    font-size: 1.1rem;
+  }
+
+  .btn-whatsapp {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn-whatsapp{
+    font-size: 1rem;
   }
 }

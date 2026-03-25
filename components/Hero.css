@@ -29,8 +29,23 @@
 }
 
 @media (max-width: 768px) {
+  .hero {
+    min-height: 60vh;
+  }
+
   .hero-content {
-    margin-left: var(--space-4);
+    margin-left: 0;
+    padding: var(--space-4);
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-3);
+  }
+
+  .hero-btn-secondary {
+    text-align: center;
   }
 }
 
@@ -61,4 +76,29 @@
 .hero-btn-secondary:hover {
   background-color: #ffffff;
   color: var(--primary);
+}
+
+.instagram-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  opacity: 0.85;
+  transition: opacity 0.2s;
+}
+
+.instagram-link:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  .hero-content {
+    margin-left: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }

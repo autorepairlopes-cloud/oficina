@@ -12,7 +12,6 @@ export default function Services() {
             de injeção eletrônica e muito mais. Nossa equipe utiliza equipamentos modernos para identificar e resolver rapidamente 
             qualquer problema, seja mecânico ou elétrico.
           </p>
-          <a href="#contato" className="btn-primary btn-services">Entre em Contato para um Orçamento</a>
         </div>
       </div>
     </section>

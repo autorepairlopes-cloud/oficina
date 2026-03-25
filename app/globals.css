@@ -1,6 +1,6 @@
 :root {
   /* Core brand colors */
-  --primary: #0449b8;
+  --primary: #001c48;
   --secondary: #6e6e6e;
   --dark: #000000;
   --light: #ffffff;
@@ -21,8 +21,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0f172a;
-    --text: #f1f5f9;
+    --background: #ffffff;
+    --text: #001326;
     --text-muted: #94a3b8;
     --dark: #ffffff; /* Invert contrast slightly for dark mode elements if needed */
   }
