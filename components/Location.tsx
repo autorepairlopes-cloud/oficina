@@ -20,9 +20,8 @@ export default function Location() {
             <div className="info-block">
               <h3><Clock size={24} /> Horário de Funcionamento</h3>
               <ul>
-                <li><strong>Segunda a Sexta:</strong> 08:00 às 18:00</li>
-                <li><strong>Sábado:</strong> 08:00 às 12:00</li>
-                <li><strong>Domingo:</strong> Fechado</li>
+                <li><strong>Segunda a Sexta:</strong> 08:00 às 12:00 | 13:30 às 18:00</li>
+                <li><strong>Sábado e Domingo:</strong> Fechado</li>
               </ul>
             </div>
           </div>

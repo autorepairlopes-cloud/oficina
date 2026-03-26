@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Lopes Auto Repair",
   description: "Serviços mecânicos de confiança e qualidade. Agende sua revisão hoje mesmo.",
+  icons: {
+    icon: "/fav.png",
+  },
 };
 
 export default function RootLayout({
