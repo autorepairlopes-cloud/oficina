@@ -8,7 +8,7 @@ export default function Header() {
       <div className="container header-content">
         <div className="logo">
           <Link href="/">
-            <Image src="/logoLopes.png" alt="Lopes Auto Repair" width={200} height={50} style={{ width: '200px', height: 'auto' }} />
+            <Image src="/logoLopes.png" alt="Lopes Auto Repair" width={0} height={0} sizes="200px" style={{ width: '200px', height: 'auto' }} />
           </Link>
         </div>
         

@@ -7,7 +7,7 @@ export default function Footer() {
     <footer className="footer">
       <div className="container footer-container">
         <div className="footer-brand">
-          <Image src="/logoLopes.png" alt="Lopes Auto Repair" width={200} height={50} style={{ width: '200px', height: 'auto' }} />
+          <Image src="/logoLopes.png" alt="Lopes Auto Repair" width={0} height={0} sizes="200px" style={{ width: '200px', height: 'auto' }} />
           <br />
           <p className="footer-desc">
             Excelência em serviços mecânicos. Seu carro novo de novo.
