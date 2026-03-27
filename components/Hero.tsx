@@ -1,18 +1,23 @@
+'use client';
+
 import './Hero.css';
+import { useLanguage } from '../lib/LanguageContext';
 
 export default function Hero() {
+  const { t } = useLanguage();
+
   return (
     <section className="hero">
       <div className="hero-overlay"></div>
       <div className="container hero-content">
         <h1 className="heading-xl hero-title">
-          Serviço Automotivo de Confiança
+          {t('hero.title')}
         </h1>
         <p className="hero-subtitle">
-          Manutenção, revisão e reparos completos com a garantia de qualidade que você merece. Seu carro nas melhores mãos.
+          {t('hero.subtitle')}
         </p>
         <div className="hero-actions">
-          <a href="#contato" className="btn-secondary hero-btn-secondary">Fale Conosco</a>
+          <a href="#contato" className="btn-secondary hero-btn-secondary">{t('hero.contact')}</a>
           <a 
             href="https://www.instagram.com/autorepairlopes/" 
             target="_blank" 

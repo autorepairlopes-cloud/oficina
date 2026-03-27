@@ -1,16 +1,18 @@
+'use client';
+
 import './Services.css';
+import { useLanguage } from '../lib/LanguageContext';
 
 export default function Services() {
+  const { t } = useLanguage();
+
   return (
     <section id="servicos" className="section services">
       <div className="container">
         <div className="services-content">
-          <h2 className="heading-lg services-title">Especialistas no Cuidado do Seu Veículo</h2>
+          <h2 className="heading-lg services-title">{t('services.title')}</h2>
           <p className="services-desc">
-            Na Lopes Auto Repair, oferecemos serviços automotivos completos para garantir o melhor desempenho e segurança do seu carro. 
-            Realizamos diagnósticos precisos, manutenções preventivas, troca de óleo, reparos de suspensão, revisão nos freios, sistema 
-            de injeção eletrônica e muito mais. Nossa equipe utiliza equipamentos modernos para identificar e resolver rapidamente 
-            qualquer problema, seja mecânico ou elétrico.
+            {t('services.desc')}
           </p>
         </div>
       </div>
