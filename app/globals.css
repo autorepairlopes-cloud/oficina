@@ -17,15 +17,7 @@
   --space-6: 3rem;
   --space-8: 4rem;
   --space-12: 6rem;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #ffffff;
-    --text: #001326;
-    --text-muted: #94a3b8;
-    --dark: #ffffff; /* Invert contrast slightly for dark mode elements if needed */
-  }
+  color-scheme: light;
 }
 
 * {
