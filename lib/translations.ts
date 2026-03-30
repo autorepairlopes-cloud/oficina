@@ -1,4 +1,4 @@
-export type Locale = 'pt' | 'en';
+export type Locale = 'pt' | 'en' | 'es';
 
 export const translations: Record<Locale, Record<string, string>> = {
   pt: {
@@ -86,5 +86,48 @@ export const translations: Record<Locale, Record<string, string>> = {
 
     // Metadata
     "meta.description": "Trusted and quality mechanical services. Book your inspection today.",
+  },
+  es: {
+    // Header
+    "header.about": "Sobre",
+    "header.location": "Ubicación",
+    "header.contact": "Contacto",
+    "header.cta": "Agendar Revisión",
+
+    // Hero
+    "hero.title": "Servicio Automotriz de Confianza",
+    "hero.subtitle": "Mantenimiento, revisiones y reparaciones completas con la garantía de calidad que mereces. Tu coche en las mejores manos.",
+    "hero.contact": "Contáctanos",
+
+    // Services
+    "services.title": "Especialistas en el Cuidado de tu Vehículo",
+    "services.desc": "En Lopes Auto Repair, ofrecemos servicios automotrices completos para garantizar el mejor rendimiento y seguridad de tu coche. Realizamos diagnósticos precisos, mantenimiento preventivo, cambio de aceite, reparaciones de suspensión, revisión de frenos, sistema de inyección electrónica y mucho más. Nuestro equipo utiliza equipos modernos para identificar y resolver rápidamente cualquier problema, ya sea mecánico o eléctrico.",
+
+    // Location
+    "location.title": "Nuestra Ubicación",
+    "location.desc": "Ven a visitarnos. Estamos convenientemente ubicados para un fácil acceso y así servirte mejor.",
+    "location.address": "Dirección",
+    "location.hours": "Horario de Atención",
+    "location.weekdays": "Lunes a Viernes:",
+    "location.weekdaysTime": "08:00 a 12:00 | 13:30 a 18:00",
+    "location.weekend": "Sábado y Domingo:",
+    "location.closed": "Cerrado",
+
+    // Contact
+    "contact.title": "¿Necesitas Reparaciones? Contáctanos",
+    "contact.desc": "Nuestro equipo de especialistas está listo para cuidar de tu vehículo con la mayor rapidez y transparencia.",
+    "contact.call": "Llámanos",
+    "contact.whatsapp": "Habla por WhatsApp",
+
+    // Footer
+    "footer.desc": "Excelencia en servicios mecánicos. Tu coche como nuevo otra vez.",
+    "footer.quickLinks": "Enlaces Rápidos",
+    "footer.about": "Sobre Nosotros",
+    "footer.directions": "Cómo Llegar",
+    "footer.contact": "Contáctanos",
+    "footer.rights": "Todos los derechos reservados.",
+
+    // Metadata
+    "meta.description": "Servicios mecánicos de confianza y calidad. Agenda tu revisión hoy mismo.",
   },
 };

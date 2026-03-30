@@ -13,14 +13,12 @@ const LanguageContext = createContext<LanguageContextType>({
   t: (key: string) => key,
 });
 
-export function LanguageProvider({ children }: { children: ReactNode }) {
-  const [locale, setLocale] = useState<Locale>('pt');
+export function LanguageProvider({ children, initialLocale }: { children: ReactNode, initialLocale: Locale }) {
+  const [locale, setLocale] = useState<Locale>(initialLocale);
 
   useEffect(() => {
-    const browserLang = navigator.language || 'pt';
-    const isPt = browserLang.toLowerCase().startsWith('pt');
-    setLocale(isPt ? 'pt' : 'en');
-  }, []);
+    document.documentElement.lang = locale;
+  }, [locale]);
 
   const t = (key: string): string => {
     return translations[locale][key] || translations['pt'][key] || key;
