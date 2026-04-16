@@ -13,12 +13,12 @@ export default function Header() {
       <div className="container header-content">
         <div className="logo">
           <Link href="/">
-            <Image src="/logoLopes.png" alt="Lopes Auto Repair" width={0} height={0} sizes="200px" style={{ width: '200px', height: 'auto' }} />
+            <Image src="/logoLopes.png" alt="Lopes Auto Repair - Oficina Mecânica em Araquari SC" width={0} height={0} sizes="200px" style={{ width: '200px', height: 'auto' }} />
           </Link>
         </div>
         
         <div className="header-right">
-          <nav className="nav-menu">
+          <nav className="nav-menu" aria-label="Navegação principal">
             <ul>
               <li><Link href="#sobre">{t('header.about')}</Link></li>
               <li><Link href="#localizacao">{t('header.location')}</Link></li>

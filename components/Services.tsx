@@ -7,7 +7,7 @@ export default function Services() {
   const { t } = useLanguage();
 
   return (
-    <section id="servicos" className="section services">
+    <section id="servicos" className="section services" aria-label="Serviços de mecânica automotiva em Araquari">
       <div className="container">
         <div className="services-content">
           <h2 className="heading-lg services-title">{t('services.title')}</h2>
