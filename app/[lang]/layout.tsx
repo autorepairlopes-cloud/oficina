@@ -46,8 +46,6 @@ export const metadata: Metadata = {
     canonical: siteUrl,
     languages: {
       "pt-BR": "/pt",
-      en: "/en",
-      es: "/es",
     },
   },
   openGraph: {
@@ -104,7 +102,7 @@ export default async function RootLayout({
   // Await the params in newer Next.js versions since they are promises
   const resolvedParams = await params;
   const lang = resolvedParams?.lang || 'pt';
-  const validLang = (lang === 'en' || lang === 'es') ? lang as 'en' | 'es' : 'pt';
+  const validLang = 'pt';
 
   return (
     <html lang={validLang} className={`${geistSans.variable} ${geistMono.variable}`}>
