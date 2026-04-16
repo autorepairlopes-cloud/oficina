@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import "../globals.css";
-import { LanguageProvider } from "../../lib/LanguageContext";
+import "./globals.css";
+import { LanguageProvider } from "../lib/LanguageContext";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -44,9 +44,6 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   alternates: {
     canonical: siteUrl,
-    languages: {
-      "pt-BR": "/pt",
-    },
   },
   openGraph: {
     title:
@@ -92,22 +89,15 @@ export const metadata: Metadata = {
   },
 };
 
-export default async function RootLayout({
+export default function RootLayout({
   children,
-  params,
 }: Readonly<{
   children: React.ReactNode;
-  params: Promise<{ lang: string }>;
 }>) {
-  // Await the params in newer Next.js versions since they are promises
-  const resolvedParams = await params;
-  const lang = resolvedParams?.lang || 'pt';
-  const validLang = 'pt';
-
   return (
-    <html lang={validLang} className={`${geistSans.variable} ${geistMono.variable}`}>
+    <html lang="pt" className={`${geistSans.variable} ${geistMono.variable}`}>
       <body>
-        <LanguageProvider initialLocale={validLang}>{children}</LanguageProvider>
+        <LanguageProvider initialLocale="pt">{children}</LanguageProvider>
       </body>
     </html>
   );
