@@ -1,4 +1,4 @@
-export const GOOGLE_ADS_ID = process.env.NEXT_PUBLIC_GOOGLE_ADS_ID || '';
+export const GOOGLE_ADS_ID = process.env.NEXT_PUBLIC_GOOGLE_ADS_ID || 'AW-18114206765';
 export const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID || '';
 
 declare global {
